@@ -1,6 +1,7 @@
 // const Vue = require("vue/dist/vue.js")
 import Vue from 'vue/dist/vue.runtime.esm'
 import App from "./App.vue"
+import VueParticles from "./vue-particles.vue"
 
 var vm = new Vue({
     el: '#app',
@@ -8,7 +9,8 @@ var vm = new Vue({
         return createElement(
             "main",   // tag name 标签名称 或 组件对象
             [
-                createElement(App)
+                createElement(App),
+                createElement(VueParticles),
             ]
         )
     }

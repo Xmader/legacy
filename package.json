@@ -16,6 +16,7 @@
         "@vue/component-compiler-utils": "^2.2.0",
         "less": "^3.8.1",
         "parcel-bundler": "^1.9.7",
+        "vue-particles": "^1.0.9",
         "vue-template-compiler": "^2.5.17"
     },
     "license": "MIT"
