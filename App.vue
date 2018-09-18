@@ -1,12 +1,3 @@
-<!--
-/*
-* @Introduce:          检索即时
-* @Author:             HongqingCao
-* @Date:               2018-08-10 17:37:22
-* @Last Modified by:   HongqingCao
-* @Last Modified time: 2018-08-10 17:37:22
-*/
--->
 
 <template>
     <div class="search-box">
