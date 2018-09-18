@@ -1,12 +1,8 @@
 
 <template>
     <div class="search-box">
-        <div class="search-wrapper">
-            <input type="text" v-model="keyword" placeholder="Search title..." />
-            <label>Search Title</label>
-        </div>
         <div class="wrapper">
-            <div class="card" v-for="post in filteredList">
+            <div class="card" v-for="(post, index) in postList" :key="index">
                 <a v-bind:href="post.link" target="_blank">
                     <img v-bind:src="post.img" />
                     <small>Posted by: {{ post.author }}</small> {{ post.title }}
@@ -25,6 +21,7 @@ class Post {
         this.img = img;
     }
 }
+
 export default {
     data() {
         return {
@@ -36,67 +33,7 @@ export default {
                     'Chris',
                     'https://vuejs.org//images/logo.png'
                 ),
-                new Post(
-                    'React.js',
-                    'https://facebook.github.io/react/',
-                    'Tim',
-                    'http://daynin.github.io/clojurescript-presentation/img/react-logo.png'
-                ),
-                new Post(
-                    'Angular.js',
-                    'https://angularjs.org/',
-                    'Sam',
-                    'https://angularjs.org/img/ng-logo.png'
-                ),
-                new Post(
-                    'Ember.js',
-                    'http://emberjs.com/',
-                    'Rachel',
-                    'http://www.gravatar.com/avatar/0cf15665a9146ba852bf042b0652780a?s=200'
-                ),
-                new Post(
-                    'Meteor.js',
-                    'https://www.meteor.com/',
-                    'Chris',
-                    'http://hacktivist.in/introduction-to-nodejs-mongodb-meteor/img/meteor.png'
-                ),
-                new Post(
-                    'Aurelia',
-                    'http://aurelia.io/',
-                    'Tim',
-                    'https://cdn.auth0.com/blog/aurelia-logo.png'
-                ),
-                new Post(
-                    'Node.js',
-                    'https://nodejs.org/en/',
-                    'A. A. Ron',
-                    'https://code-maven.com/img/node.png'
-                ),
-                new Post(
-                    'Pusher',
-                    'https://pusher.com/',
-                    'Alex',
-                    'https://avatars1.githubusercontent.com/u/739550?v=3&s=400'
-                ),
-                new Post(
-                    'Feathers.js',
-                    'http://feathersjs.com/',
-                    'Chuck',
-                    'https://cdn.worldvectorlogo.com/logos/feathersjs.svg'
-                ),
             ]
-        }
-    },
-    methods: {
-        toggleOnOff() {
-            this.onOff = !this.onOff;
-        }
-    },
-    computed: {
-        filteredList() {
-            return this.postList.filter((post) => {
-                return post.title.toLowerCase().includes(this.keyword.toLowerCase());
-            });
         }
     }
 }

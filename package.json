@@ -7,8 +7,7 @@
     },
     "author": "xmader",
     "scripts": {
-        "clean":"rm ./docs",
-        "build": "parcel build index.html -d ./docs --public-url ./"
+        "build": "parcel build index.js -d ./dists --public-url ./"
     },
     "dependencies": {
         "vue": "^2.5.17"
