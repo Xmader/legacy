@@ -1,4 +1,9 @@
+html {
+    height: 100%;
+}
+
 .search-box {
+    @screen-mobile: calc(768px - 1px);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -11,6 +16,9 @@
             width: calc((100% - 72px)/3);
             margin: 12px;
             transition: .15s all ease-in-out;
+            @media screen and (max-width: @screen-mobile) {
+                width: calc(100% - 24px);
+            }
             a {
                 text-decoration: none;
                 padding: 12px;
