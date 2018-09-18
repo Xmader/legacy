@@ -6,8 +6,17 @@
         "url": "https://github.com/Xmader/Xmader.github.io"
     },
     "author": "xmader",
+    "scripts": {
+        "build": "parcel build index.js --public-url ./"
+    },
     "dependencies": {
         "vue": "^2.5.17"
+    },
+    "devDependencies": {
+        "@vue/component-compiler-utils": "^2.2.0",
+        "less": "^3.8.1",
+        "parcel-bundler": "^1.9.7",
+        "vue-template-compiler": "^2.5.17"
     },
     "license": "MIT"
 }
