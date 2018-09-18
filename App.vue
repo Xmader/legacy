@@ -1,6 +1,12 @@
 
 <template>
     <div class="wrapper">
+        <div class="card header">
+            <a href="https://github.com/Xmader" target="_blank">
+                Xmader：一个年轻的业余程序员
+            </a>
+        </div>
+
         <div class="card" v-for="(post, index) in postList" :key="index">
             <a v-bind:href="post.link" target="_blank">
                 <img v-bind:src="post.img" />

@@ -4,8 +4,7 @@ html {
 
 body {
     margin: 8px 20px;
-    background: #368aec;
-    // background: #2376d6;
+    background: #368aec; // background: #2376d6;
 }
 
 .wrapper {
@@ -22,9 +21,18 @@ body {
         width: calc((100% - 72px)/3);
         margin: 12px;
         transition: .15s all ease-in-out;
+        &.header {
+            float: none;
+            width: calc(100% - 24px);
+            @media screen and (min-width: @screen-mobile) {
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
         @media screen and (max-width: @screen-mobile) {
             margin-left: 24px;
-            width: calc(100% - 48px);
+            width: calc(100% - 48px) !important;
         }
         a {
             text-decoration: none;
