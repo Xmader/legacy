@@ -27,6 +27,24 @@ export default {
             keyword: '',
             postList: [
                 new Post(
+                    'AriaNg GUI',
+                    'https://github.com/Xmader/aria-ng-gui',
+                    '一个 Aria2 图形界面客户端',
+                    'https://raw.githubusercontent.com/Xmader/aria-ng-gui/master/AriaNg.png'
+                ),
+                new Post(
+                    'Hydrogen',
+                    'https://coding.net/u/xmader/p/hydrogen/git/blob/linux/README_zh.md',
+                    '基于 Git 的 笔记、任务、待办 管理工具',
+                    'https://raw.githubusercontent.com/Xmader/hydrogen/linux/resources/app/assets/imgs/logo.png'
+                ),
+                new Post(
+                    'Xmind Zen for Linux',
+                    'https://github.com/Xmader/xmind_zen_linux',
+                    'Xmind Zen 的 Linux 移植版 (在官方版发布后不再更新)',
+                    'https://raw.githubusercontent.com/Xmader/xmind_zen_linux/master/resources/icon.png'
+                ),
+                new Post(
                     '膜乎 App',
                     'https://github.com/Xmader/mohu',
                     '膜乎免 番羽土啬 APP',
