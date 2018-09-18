@@ -6,7 +6,10 @@ var vm = new Vue({
     el: '#app',
     render: function (createElement) {
         return createElement(
-            App,   // tag name 标签名称 或 组件对象
+            "main",   // tag name 标签名称 或 组件对象
+            [
+                createElement(App)
+            ]
         )
     }
 })

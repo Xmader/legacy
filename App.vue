@@ -1,14 +1,12 @@
 
 <template>
-    <div class="search-box">
-        <div class="wrapper">
-            <div class="card" v-for="(post, index) in postList" :key="index">
-                <a v-bind:href="post.link" target="_blank">
-                    <img v-bind:src="post.img" />
-                    <small>{{ post.description }}</small>
-                    {{ post.title }}
-                </a>
-            </div>
+    <div class="wrapper">
+        <div class="card" v-for="(post, index) in postList" :key="index">
+            <a v-bind:href="post.link" target="_blank">
+                <img v-bind:src="post.img" />
+                <small>{{ post.description }}</small>
+                {{ post.title }}
+            </a>
         </div>
     </div>
 </template>
@@ -31,7 +29,7 @@ export default {
                 new Post(
                     '膜乎 App',
                     'https://github.com/Xmader/mohu',
-                    '',
+                    '膜乎免 番羽土啬 APP',
                     'https://raw.githubusercontent.com/Xmader/mohu/master/resources/app/logo.png'
                 ),
                 new Post(
