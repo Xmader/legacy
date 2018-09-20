@@ -68,6 +68,12 @@ export default {
                     '',
                     'https://raw.githubusercontent.com/Xmader/rubao_manual/master/icon.jpg'
                 ),
+                new Post(
+                    '🐸ASCII字符画视频流',
+                    'https://github.com/Xmader/ascii_live',
+                    '实时转换视频到ASCII字符画',
+                    'https://raw.githubusercontent.com/Xmader/ascii_live/master/demo.gif'
+                ),
             ]
         }
     }
