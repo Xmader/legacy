@@ -20,7 +20,7 @@ export default {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 99%;
+  height: 115%;
 }
 </style>
 
