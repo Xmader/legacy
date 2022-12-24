@@ -54,7 +54,7 @@ export default {
                     '膜乎 App',
                     'https://github.com/Xmader/mohu',
                     '膜乎免 番羽土啬 APP',
-                    'https://raw.githubusercontent.com/Xmader/mohu/master/resources/app/logo.png'
+                    'https://raw.githubusercontent.com/Xmader/mohu/master/app/assets/logo.png'
                 ),
                 new Post(
                     '膜法指南 网页版',
